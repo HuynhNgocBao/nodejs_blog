@@ -8,9 +8,9 @@ app.use(
         extended: true,
     }),
 );
-app.use(express.json());
+app.use(      express.json());
 app.use(express.static(path.join(__dirname, 'public')));
-                    app.engine(
+app.engine(
     'hbs',
     engine({
         extname: '.hbs',
